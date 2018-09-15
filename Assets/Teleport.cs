@@ -69,6 +69,7 @@ public class Teleport : MonoBehaviour
 		print("Current position Z is " + hit.point.z);
 
 		Vector3 newLocation = new Vector3(hit.point.x, 1, hit.point.z);
+		transform.SetParent(transform, false);
 		transform.position = newLocation;
 
 		print("Current transform.position X is " + transform.position.x);
